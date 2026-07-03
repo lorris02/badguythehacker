@@ -1,0 +1,25 @@
+# env
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+venv*/
+.venv/
+
+# runtime artifacts
+*.db
+reports/
+.bounty_agent_runtime.yaml
+*.log
+
+# js
+node_modules/
+dist/
+
+# misc
+.claude/
+.DS_Store
