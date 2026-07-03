@@ -1,0 +1,48 @@
+# Environment & secrets
+.env
+*.env
+.env.*
+backend/.env
+.bounty_agent_runtime.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+venv311/
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Logs & reports
+logs/
+reports/
+*.log
+*.err
+server.log
+server.err
+frontend.log
+
+# Tool binaries (downloaded at runtime by setup_tools.py)
+backend/tools/bin/sqlmap/
+backend/tools/bin/ffuf
+backend/tools/bin/ffuf.exe
+backend/tools/bin/httpx
+backend/tools/bin/httpx.exe
+backend/tools/bin/nuclei
+backend/tools/bin/nuclei.exe
+backend/tools/bin/subfinder
+backend/tools/bin/subfinder.exe
+
+# DB
+*.sqlite3
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
