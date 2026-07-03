@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #0f1117;
+  color: #e6edf3;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Thin scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #484f58; }
+
+/* Markdown prose in reports */
+.prose h1 { font-size: 1.4rem; font-weight: 600; margin: 1rem 0 .5rem; }
+.prose h2 { font-size: 1.1rem; font-weight: 600; margin: .9rem 0 .4rem; color: #58a6ff; }
+.prose h3 { font-size: .95rem; font-weight: 600; margin: .8rem 0 .3rem; }
+.prose code { background: #161b22; border: 1px solid #30363d; border-radius: 4px; padding: 1px 5px; font-size: .85em; }
+.prose pre  { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1rem; overflow-x: auto; }
+.prose pre code { background: none; border: none; padding: 0; }
+.prose table { width: 100%; border-collapse: collapse; margin: .5rem 0; }
+.prose th, .prose td { border: 1px solid #30363d; padding: .35rem .6rem; text-align: left; }
+.prose th { background: #161b22; }
+.prose blockquote { border-left: 3px solid #58a6ff; padding-left: .75rem; color: #8b949e; margin: .5rem 0; }
